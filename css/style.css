@@ -389,7 +389,7 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
     font-weight: normal;
     font-size: 12px;
     line-height: calc(14 / 12);
-    /* identical to box height */
+   
     
     letter-spacing: 0.01em;
     
@@ -434,6 +434,7 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
     font-size: 12px;
     line-height: calc(14 / 12);
     letter-spacing: 0.01em;
+    display: block;
     padding-right: 16px;
     padding-left: 16px;
     padding-top: 12px;
@@ -1298,7 +1299,7 @@ margin-top: calc(-1 * var(--presentation-set));
 .link-presentation:focus .top-text
 {
     transform: translateY(0%);
-  
+    
    }
    
 
