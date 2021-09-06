@@ -502,20 +502,41 @@
             Оставьте свои данные, мы вам перезвоним
          </h3>
         <form action="" class="input">
-         
-            <label for="name" class="lable-text">Имя</label>
-            <input type="text" name="name" class="input-form" id="name">
+           
+            <label for="name" class="lable-text">Имя
+                <span class="icons-form">
+            <input type="text" name="name" class="input-form" id="name" required />
+            <svg   class="icon-form"  width="12" height="12">
+                <use    href="./img/spraits.svg#icon-name"></use>
+             </svg>
+            </span>
+            </label>
+            <label for="tel" class="lable-text">Телефон
+                <span class="icons-form">
+                <input type="text" name="tel" id="tel" class="input-form"  />
+                <svg   class="icon-form"  width="13" height="13">
+                    <use    href="./img/spraits.svg#icon-tel"></use>
+                 </svg>
+                 </span>
+            </label>
+            
 
-            <label for="tel" class="lable-text">Телефон</label>
-            <input type="text" name="tel" id="tel" class="input-form"  >
-
-            <label for="mail" class="lable-text">Почта</label>
-            <input type="text" name="mail" id="mail" class="input-form">
+            <label for="mail" class="lable-text">Почта
+                <span class="icons-form">
+                    <input type="text" name="mail" id="mail" class="input-form" />
+                    <svg   class="icon-form"  width="15" height="12">
+                        <use    href="./img/spraits.svg#mail"></use>
+                     </svg>
+                </span>
+             
+            </label>
+           
 
             <label for="" class="lable-text">Комментарий</label>
             <textarea name="" id=""placeholder="Введите текст" class="area-input placeholder-text"></textarea>
-      
-    </form>        
+           
+    </form>       
+    
         <button class="inner-win" data-modal-close>
 
             <svg class="close-win" width="11" height="11">
