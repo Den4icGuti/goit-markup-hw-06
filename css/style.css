@@ -386,7 +386,7 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
     
     }
     
-    .lable-text{
+    .label-text{
     font-weight: normal;
     font-size: 12px;
     line-height: calc(14 / 12);
@@ -399,14 +399,13 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
     display: block;
    
     padding-top: 10px;
+    padding-bottom: 4px;
     }
     
     .input{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        margin: 0 auto;
-        margin-bottom: 30px;
+        
     }
     
     .input-form{
@@ -416,30 +415,62 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
         border: solid 1px  rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         cursor: pointer;
+      
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
        
-        transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
-     
+    }
+    
+   
+
+    .input-form:hover ,
+    .input-form:focus{
+        border-color: var(--blue);
     }
 
+    .icons-form{
+        position: relative;
+    }
 
-    .form-icon{
-        fill: var(--black);
+    .icon-form{
+       
+        position: absolute;
+        left: 13px;
+        top:0;
+
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       
     }
+    
 
     .icon-form:hover{
         fill: var(--blue);
     }
-    
-    .input-form:hover{
-        border: solid 1px #188CE8;
-    }
 
+
+
+
+      
+    /* .tel-header:hover .icon-right,
+    .tel-header:focus .icon-right
+    {
+      fill: var(--blue);
+    }
+    
+
+   .tel-header:hover, 
+   .tel-header:focus
+   {
+    color: var(--blue)  ;
+   } */
+    
+    
     .area-input{
         width:100%;
         height: 120px;
         border: solid 1px  rgba(33, 33, 33, 0.2);
         border-radius: 4px;
+     
     }
 
     textarea{
@@ -459,17 +490,9 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
     color: rgba(117, 117, 117, 0.5);
     }
     
-    .icons-form{
-        position: relative;
-       
-    }
+   
 
-    .icon-form{
-        fill: var(--black);
-        position: absolute;
-        left: 15px;
-        top:0;
-    }
+    
 
 .backdrop{
     position: fixed;
@@ -1130,7 +1153,7 @@ margin-bottom: 20px;
     background: var(--blue);
     border-radius: 4px;
     padding: 6px 22px;
-    border: transparent;
+   
 
 
 font-style: normal;
