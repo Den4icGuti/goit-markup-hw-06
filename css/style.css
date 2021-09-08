@@ -366,6 +366,9 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
     
 }
 
+/* Modal window
+============= */
+
 .close-win{
     fill: var(--black);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -433,12 +436,21 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
     }
     
    
+    .input-form:hover{
+        border-color: var(--blue);
+    }
 
-    .input-form:hover,
-    .input-form:focus{
-        border: solid 1px var(--blue);
+    .input-form:hover + .icon-form,
+    .input-form:focus + .icon-form{
+        border-color: solid 1px var(--blue);
+        border: none;
+        fill: var(--blue);
 
     }
+
+
+  
+   
 
     .icons-form{
         position: relative;
@@ -456,34 +468,22 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
 
     
     
-
-    .icon-form:hover{
-        fill: var(--blue);
-    }
-
-
-
-
-      
-    /* .tel-header:hover .icon-right,
-    .tel-header:focus .icon-right
-    {
-      fill: var(--blue);
-    }
-    
-
-   .tel-header:hover, 
-   .tel-header:focus
-   {
-    color: var(--blue)  ;
-   } */
-    
     
     .area-input{
         width:100%;
         height: 120px;
         border: solid 1px  rgba(33, 33, 33, 0.2);
         border-radius: 4px;
+
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        
+     }
+
+
+
+     .area-input:hover{
+         border-color: var(--blue);
      }
 
     textarea{
@@ -502,6 +502,34 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
     padding-bottom:12px ;
     color: rgba(117, 117, 117, 0.5);
     }
+
+
+    .btn-submit{
+     
+        background-color: var(--blue);
+        width: 200px;
+        height: 50px;
+       
+        margin-top: 74px;
+        /* transform: translateY(74px); */
+        border: transparent;
+        border-radius: 4px;
+        cursor: pointer;
+       
+     
+      
+      align-self: center;
+
+
+        /* text */
+       font-weight: bold;
+       font-size: 16px;
+       line-height: calc(30 / 16);
+       text-align: center;
+       letter-spacing: 0.06em;
+       color: var(--white);
+
+    }
     
    
 
@@ -518,9 +546,7 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
     
 
     transition: opacity 250ms linear, visibility 300ms;  
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+   
 }
 
 .window-form{
@@ -561,7 +587,7 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
 }
 
 
-
+/* ========= /Modal window */
 
 /* /banner */
 
