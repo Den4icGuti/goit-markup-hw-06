@@ -490,7 +490,7 @@
            </ul>
         </div>
 
-        
+        <form>
             <label class="title-mail-footer">Подпишитесь на рассылку 
                 <input type="text" name="mail" id="" class="form-footer placeholder-footer" placeholder="E-mail">
             </label>
@@ -500,6 +500,8 @@
                         <use href="./img/spraits.svg#icon-send"></use>
                     </svg>
                 </button>
+        </form>
+           
                 
         </div>
      
@@ -519,7 +521,7 @@
            
             <label class="label-text">Имя
                 <span class="icons-form">
-            <input type="text" name="name" class="input-form"  />
+            <input type="text" name="name" class="input-form"   required minlength="2" maxlength="12"/>
             <svg   class="icon-form"  width="12" height="12">
                 <use    href="./img/spraits.svg#icon-name"></use>
              </svg>
@@ -528,7 +530,7 @@
             </label>
             <label  class="label-text">Телефон
                 <span class="icons-form">
-                <input type="text" name="tel" class="input-form"  />
+                <input type="text" name="tel" class="input-form"   required/>
                 <svg   class="icon-form"  width="13" height="13">
                     <use    href="./img/spraits.svg#icon-tel"></use>
                  </svg>
@@ -547,10 +549,23 @@
              
             </label>
            
+       
 
             <label for="" class="coment-text">Комментарий</label>
-            <textarea name="" id="" class="area-input placeholder-text" placeholder="Введите текст"></textarea>
-      
+
+            <textarea name="comment" class="area-input placeholder-text" placeholder="Введите текст"></textarea>
+
+            
+            <input type="checkbox" name="" id="">
+          <label for="" > <span d > Соглашаюсь с рассылкой и принимаю Условия договора 
+            <a href="" >Условия договора</a> 
+          </span> 
+          
+
+          </label>
+          
+          
+            
            <button type="submit" class="btn-submit">Отправить</button>
            
     </form>       
