@@ -519,54 +519,48 @@
          </h3>
         <form action="" class="input"  >
            
-            <label class="label-text">Имя
+            <label for="user_name" class="label-text">Имя  </label>
                 <span class="icons-form">
-            <input type="text" name="name" class="input-form"   required minlength="2" maxlength="12"/>
+            <input type="text" name="name" class="input-form"   required minlength="2" maxlength="12" id="user_name"/>
             <svg   class="icon-form"  width="12" height="12">
                 <use    href="./img/spraits.svg#icon-name"></use>
              </svg>
-            </span>
+        </span>
             
-            </label>
-            <label  class="label-text">Телефон
+          
+            <label  for="user_tel" class="label-text">Телефон </label>
                 <span class="icons-form">
-                <input type="text" name="tel" class="input-form"   required/>
+                <input type="text" name="tel" class="input-form" id="user_tel"   required/>
                 <svg   class="icon-form"  width="13" height="13">
                     <use    href="./img/spraits.svg#icon-tel"></use>
                  </svg>
-                 </span>
+             </span>
 
-            </label>
+           
             
 
-            <label class="label-text">Почта
+            <label for="user_mail" class="label-text">Почта</label>
                 <span class="icons-form">
-                    <input type="text" name="mail" class="input-form" />
+                    <input type="text" name="mail" class="input-form" id="user_mail" />
                     <svg   class="icon-form"  width="15" height="12">
                         <use    href="./img/spraits.svg#mail"></use>
                      </svg>
                 </span>
-             
-            </label>
-           
-       
 
-            <label for="" class="coment-text">Комментарий</label>
+              <label for="" class="coment-text">Комментарий</label>
+        <textarea name="comment" class="area-input placeholder-text" placeholder="Введите текст"></textarea>
 
-            <textarea name="comment" class="area-input placeholder-text" placeholder="Введите текст"></textarea>
-
-            
-            <input type="checkbox" name="" id="">
-          <label for="" > <span d > Соглашаюсь с рассылкой и принимаю Условия договора 
-            <a href="" >Условия договора</a> 
-          </span> 
-          
-
-          </label>
-          
-          
-            
-           <button type="submit" class="btn-submit">Отправить</button>
+       <div class="check">
+        <input type="checkbox" name="policy" id="check" class="checkbox-modal visually-hidden">
+        <label class="text-condition" for="check">
+            <span class="check-label">
+                <svg   class="icon-check"  width="11" height="9">
+                    <use    href="./img/spraits.svg#icon-check"></use>
+                 </svg>
+            </span>
+            Соглашаюсь с рассылкой и принимаю <a class="link-condition" href="">Условия договора</a></label>
+    </div>
+        <button type="submit" class="btn-submit">Отправить</button>
            
     </form>       
         
