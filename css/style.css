@@ -1113,8 +1113,8 @@ color: var(--white);
 }
 
 
-.inner-adres{
-    flex-shrink: 0  ;
+.inner-address{
+    flex-shrink: 0;
 }
 
 .map-address{
