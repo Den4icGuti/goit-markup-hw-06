@@ -165,6 +165,9 @@ img{
 
 }
 
+
+
+
 .text-portfolio:hover,
 .text-portfolio:focus
 {
@@ -440,7 +443,7 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
         border: none;
         fill: var(--blue);
 
-    }
+      }
 
 
   
@@ -511,8 +514,9 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
 
        padding-left: 16px;
        padding-top: 12px;
-      margin-top: 4px;
+       margin-top: 4px;
        margin-bottom: 20px;
+     
      }
 
 
@@ -528,13 +532,14 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
     font-size: 12px;
     line-height: calc(14 / 12);
     letter-spacing: 0.01em;
-    display: block;
+   
    
     }
 
     .placeholder-text::placeholder{
 
         color: rgba(117, 117, 117, 0.5);
+      
       
     }
 
@@ -1091,7 +1096,6 @@ color: var(--white);
 }
 
 
-
 .address{
 
     font-style: normal;
@@ -1103,13 +1107,17 @@ color: var(--white);
     text-decoration: none;
 
     color: var(--white);
+
+   
   
 }
 
 
+.inner-adres{
+    flex-shrink: 0  ;
+}
 
-
-.inner-address{
+.map-address{
     
     font-style: normal;
     font-weight: normal;
@@ -1120,10 +1128,13 @@ color: var(--white);
     text-decoration: none;
 
     color: var(--white);
+
+  flex-shrink: 0;
+   
 }
 .mail-footer{
      display: block;
-
+   
     margin-top: 9px;
 
    text-decoration: none;
@@ -1271,9 +1282,7 @@ margin-left: 93px;
 }
 
 
-.address{
-    flex-shrink: 0;
-}
+
 
 
 .placeholder-footer{
