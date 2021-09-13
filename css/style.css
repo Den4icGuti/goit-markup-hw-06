@@ -704,7 +704,7 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
 
 
 .inner-win:hover .close-win,
-.inner-win:hover .close-win
+.inner-win:focus .close-win
 {
     fill: var(--blue);
 }
